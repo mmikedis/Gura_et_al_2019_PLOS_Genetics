@@ -5,19 +5,11 @@
 ## ${input_bed} is a bed file containing regions within transcripts (i.e., crosslinked sites); chromosome field must be in UCSC style ("chr1")
 	## format:
 	## FDR must be in column #13
-## ${Refseq_ids} is a list of transcripts (Refseq ids) from which to obtain sequence data for (filtered so that it contains the longest 3'UTR isoform per gene)
+## ${Refseq_ids} is a list of transcripts (Refseq ids) for which to obtain sequence data
 ## ${expand_regions} is an integer by which the sequence originating from the bed file will be expanded right and left sides; expanded sequence will be the transcript sequence only (no genomic sequence)
 ## ${output_filename}
 ## uses mm10 GRCm38.90
 ## Dependencies: GenomicFeatures, BSgenome.Mmusculus.UCSC.mm10
-
-## for test running: bsub -q 18 Rscript /lab/solexa_page/maria/iCLIP_DAZL_undiff.gonia/180411_finalized_analysis/R_scripts_post_ASPeak_analysis/obtain_3UTRseq_from_bed.R /lab/solexa_page/maria/iCLIP_DAZL_undiff.gonia/180411_finalized_analysis/20180730_ASPeak/ASPeak_IgG_RNAseq_gapno0_CL.site.only_w.intergenic/foundpeaks/merged.peaks.180810/utr3_coding.only/min.TPM.1/temp.bed 10 temp
-
-##https://rdrr.io/bioc/GenomicFeatures/man/coordinate-mapping-methods.html
-
-
-##############
-### export relative position of crosslinked site within 3' UTR
 
 
 args <- commandArgs()
