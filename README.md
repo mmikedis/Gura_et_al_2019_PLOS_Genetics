@@ -1,5 +1,6 @@
 # Gura_et_al_2019_PLOS_Genetics
-Custom scripts used to analyze DAZL iCLIP data from Gura et al., 2019 PLOS Genetics
+Custom scripts used to analyze DAZL iCLIP data from Gura et al., 2020 PLOS Genetics:
+https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1008515
 
 raw_data_to_ASPeak.sh calls iCLIP peaks from raw sequencing data.
 
